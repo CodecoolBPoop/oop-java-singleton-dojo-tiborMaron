@@ -13,7 +13,7 @@ public class PrinterManager {
 
     public static void main(String[] args) {
         for (int i = 0; i < 15; i++) {
-            Printer printer = Printer.getInstance.print("some text to print");
+            Printer printer = Printer.getInstance().print("some text to print");
             printer.print("Something to print.");
         }
     }
