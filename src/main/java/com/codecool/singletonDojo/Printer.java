@@ -18,8 +18,8 @@ public class Printer {
         busyEndTime = LocalTime.now().plusSeconds(5);
     }
 
-    // Returns true is the printer is printing now.
-    public boolean isBusy() {
+    // Returns true if the printer is ready to print now.
+    public boolean isAvailable() {
         return LocalTime.now().isAfter(busyEndTime);
     }
 }
