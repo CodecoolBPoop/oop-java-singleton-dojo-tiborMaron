@@ -17,7 +17,7 @@ class Printer {
     }
 
     static Printer getInstance() {
-        if (counter <= 10) {
+        if (counter < 10) {
             Printer instance = new Printer(counter++);
             instances.add(instance);
             return instance;
